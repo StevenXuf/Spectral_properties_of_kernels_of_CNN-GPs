@@ -31,7 +31,7 @@ Note that the image data must be normalized in range [0,1]:
 img_set=training_imgs[:100].reshape(100,1,28,28)/255 # normalize each pixles of 100 images into (0,1) 
 ```
 
-## Define neural networks as Gaussian processes
+## Defining neural networks as Gaussian processes
 We need to define the network structures in order to compute kernel matrix of the network. Please follow:
 ```python
 from networks import cnn, res_cnn
