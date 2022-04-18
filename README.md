@@ -22,7 +22,21 @@ We are using MNIST dataset which consists of 60,000 training samples and 10,000 
 ```python
 import torchvision as tv
 
-training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #downlad data
+training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #download data
 training_imgs=training_data.data #image data
 training_labels=training_data.targets #image labels
+```
+Note that the image data must be normalized in range [0,1].
+
+##Define neural networks as Gaussian processes
+We need to define the network structures in order to compute kernel matrix of the network. Please follow:
+```python
+from networks import
+```
+
+
+## Compute kernel matrix
+To measure the similarity between two images, their covariance must be computed using:
+```python
+
 ```
