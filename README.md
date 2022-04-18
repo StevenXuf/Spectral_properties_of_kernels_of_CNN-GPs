@@ -1,4 +1,4 @@
-# Spectral properties of kernels of CNN-GP
+# Spectral properties of kernels of CNN-GPs
 This is my Master's project that studies the spectral properties (eigenvalues and eigenvectors) of Hilbert-Schmidt integral operator 
 which was applied on Gaussian processes induced by neural networks with infinitely many neurons in hidden layers.
 
