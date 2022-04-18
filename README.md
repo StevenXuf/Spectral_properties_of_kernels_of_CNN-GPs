@@ -22,7 +22,7 @@ We are using MNIST dataset which consists of 60,000 training samples and 10,000 
 ```python
 import torchvision as tv
 
-training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True)
-training_imgs=training_data.data
-training_labels=training_data.targets
+training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #downlad data
+training_imgs=training_data.data #image data
+training_labels=training_data.targets #image labels
 ```
