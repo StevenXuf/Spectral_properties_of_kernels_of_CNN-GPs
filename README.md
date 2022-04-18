@@ -40,7 +40,7 @@ cnn3=cnn(3) #convolutional networks with 3 layers
 res3=res_cnn(3) #residual convolutional networks with 3 layers
 ```
 
-## Compute kernel matrix
+## Computing kernel matrix
 To measure the similarity between any two images, their covariance must be computed using:
 ```python
 cov_cnn=cnn3(img_set) #kernel matrix of CNN
