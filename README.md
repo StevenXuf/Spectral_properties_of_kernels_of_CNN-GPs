@@ -2,7 +2,7 @@
 This is my Master's project that studies the spectral properties (eigenvalues and eigenvectors) of Hilbert-Schmidt integral operator 
 which was applied on Gaussian processes induced by neural networks with infinitely many neurons in hidden layers.
 
-## Preparation for the implementation of code
+## 1. Preparation for the implementation of code
 Our whole numerical experiments are programming by Python, and if you want to implement the codes here you must get Python environment installed in your computer. For the simplicity and consistency with the experiments in the thesis, we recommand that you install `Jupyter Notebook`. Please Use the following command:
 ```
 pip3 install notebook
@@ -17,7 +17,8 @@ for all libraries except for `cnn_gp`. Please visit [this page](https://github.c
 
 Presumably you have all the necessary libraries, please put the python modules `networks.py` and `eig_plot.py` under current path since you will need it when running the code.
 
-## Import data
+## 2. Eigen-analysis
+### Import data
 We are using MNIST dataset which consists of 60,000 training samples and 10,000 testing samples. We directly import MNIST data from `torchvision` using:
 ```python
 import torchvision as tv
@@ -31,7 +32,7 @@ Note that the image data must be normalized in range [0,1]:
 img_set=training_imgs[:100].reshape(100,1,28,28)/255 # normalize each pixles of 100 images into (0,1) 
 ```
 
-## Defining neural networks as Gaussian processes
+### Defining neural networks as Gaussian processes
 We need to define the network structures in order to compute kernel matrix of the network. Please follow:
 ```python
 from networks import cnn, res_cnn
@@ -40,14 +41,14 @@ cnn3=cnn(3) #convolutional networks with 3 layers
 res3=res_cnn(3) #residual convolutional networks with 3 layers
 ```
 
-## Computing kernel matrix
+### Computing kernel matrix
 To measure the similarity between any two images, their covariance must be computed using:
 ```python
 cov_cnn=cnn3(img_set) #kernel matrix of CNN
 cov_res=res3(img_set) #kernel matric of ResCNN
 ```
 
-## Eigendecompostion
+### Eigendecompostion
 We do the eigendecomposition using `numpy` libray. Actually, there are 2 choices that could decompose the kernel matrix:
 * numpy.linalg.eig
 * numpy.linalg.svd
@@ -61,7 +62,7 @@ U3_cnn,S3_cnn,V3_cnn=np.linalg.svd(cov_cnn)
 ```
 to get the eigenvalues and eigenvectors of kernel matrix induced by a 3-layer CNN.
 
-## Pairwise analysis for eigenvectors
+### Pairwise analysis for eigenvectors
 In order to plot the pairwise graph of eigenvectors, we need to implement:
 ```python
 from eig_plots import eigdecomp, plot_pairs, plot_eigvec_3d
