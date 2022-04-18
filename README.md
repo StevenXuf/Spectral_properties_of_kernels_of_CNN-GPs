@@ -74,6 +74,7 @@ U3_cnn,S3_cnn,V3_cnn=eigdecomp(cnn3,digits,n_samples)
 plot_pairs(digits,U3_cnn,n_samples) #plot the top 5 pairwise eigenvectors
 ```
 ![pairwise plots of top 5 eigenvectors](/digit01cnn_3l.png)
+
 which shows us the 2D graph above.
 
 Implement
