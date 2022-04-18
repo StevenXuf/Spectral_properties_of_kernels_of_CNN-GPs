@@ -18,7 +18,7 @@ for all libraries except for `cnn_gp`. Please visit [this page](https://github.c
 Presumably you have all the necessary libraries installed, please put the python modules `networks.py` and `eig_plot.py` under current path since you will need it when running the code.
 
 ## 2. Eigen-analysis
-From here, we will do related analysis for kernel matrix, and concrete experiments can be found in the files starting with `Exp...`. 
+From here, we will do related analysis for kernel matrix, and concrete experiments can be found in the files starting with `Exp`. 
 ### Import data
 We are using MNIST dataset which consists of 60,000 training samples and 10,000 testing samples. We directly import MNIST data from `torchvision` using:
 ```python
