@@ -95,4 +95,4 @@ acc_cnn3=model_acc(model,training_batch_ind) #return average accuracy trained on
 ```
 to get averge accuracy on a specific training batch.
 
-Likewise, we also define another function named `model_acc()` to measure the influence of kernel sizes on classifcation accuracy in `Exp5_acc_of_kernel_sizes.ipynb`. See the file for details.
+Likewise, we also define another function named `model_acc()` to measure the influence of kernel sizes on classifcation accuracy in `Exp5_acc_of_kernel_sizes.ipynb`. See the file for more details.
