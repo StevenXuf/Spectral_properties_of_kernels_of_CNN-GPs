@@ -9,8 +9,10 @@ pip3 install notebook
 ```
 to install the notebook for both Mac and Linux systems if you did not install it yet.
 
-After you installed the environment, you also need to install related libraries including: `matplotlib`, `numpy`, `pytorch`, and `cnn_gp`. To install the libraries, please use:
+After you installed the environment, you also need to install related libraries including: `matplotlib`, `numpy`, `torch`, `torchvision` and `cnn_gp`. To install the libraries, please use:
 ```
 pip3 install [library_name]
 ```
 for all libraries except for `cnn_gp`. Please visit [this page](https://github.com/waegemans/cnn-gp/tree/stable-backprop) to get the library `cnn_gp` which can compute the kernel matrix when we input some data, and follow the procedures that mentioned to install the library.
+
+Presumably you have all the libraries necessary, please put the python module `networks` and `eig_plot` under current path.
