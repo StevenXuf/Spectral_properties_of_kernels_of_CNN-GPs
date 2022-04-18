@@ -53,4 +53,5 @@ We do the eigendecomposition using `numpy` libray. Actually, there are 2 choices
 * numpy.linalg.eig
 * numpy.linalg.svd
 `
+
 We use `svd` since it is numercially more stable than `eig`. If using `eig`, there will be sigularity in eigenvalues.
