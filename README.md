@@ -59,4 +59,22 @@ imoprt numpy as np
 
 U3_cnn,S3_cnn,V3_cnn=np.linalg.svd(cov_cnn)
 ```
-to get the eigenvalues and eigenvectors of kernel matrix induced by 3-layer CNN.
+to get the eigenvalues and eigenvectors of kernel matrix induced by a 3-layer CNN.
+
+## Pairwise analysis for eigenvectors
+In order to plot the pairwise graph of eigenvectors, we need to implement:
+```python
+from eig_plots import eigdecomp, plot_pairs, plot_eigvec_3d
+
+n_samples=500  #define the size of image dataset
+digits=[0,1] #define the digits we want to do analysis
+
+#do the eigendecomposition for model cnn3 on digits 0 and 1 of total size 500 images
+U3_cnn,S3_cnn,V3_cnn=eigdecomp(cnn3,digits,n_samples) 
+plot_pairs(digits,U3_cnn,n_samples) #plot the top 5 pairwise eigenvectors
+```
+which shows us the 2D graph. Implement
+```python
+plot_eigvec_3d(digits,U3_cnn,n_samples)
+```
+to show the 3D graph for top 3 eigenvectors.
