@@ -82,3 +82,4 @@ Implement
 plot_eigvec_3d(digits,U3_cnn,n_samples)
 ```
 to show the 3D graph for top 3 eigenvectors.
+![3d plot of top 3 eigenvectors](/eigvec01cnn_3l.png)
