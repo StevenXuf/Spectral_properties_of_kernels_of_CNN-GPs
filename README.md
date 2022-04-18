@@ -53,3 +53,10 @@ We do the eigendecomposition using `numpy` libray. Actually, there are 2 choices
 * numpy.linalg.svd
 
 We use `svd` since it is numercially more stable than `eig`. If using `eig`, there will be sigularity in eigenvalues.
+For instance, we use:
+```python
+imoprt numpy as np
+
+U3_cnn,S3_cnn,V3_cnn=np.linalg.svd(cov_cnn)
+```
+to get the eigenvalues and eigenvectors of kernel matrix induced by 3-layer CNN.
