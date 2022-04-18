@@ -3,5 +3,7 @@ This is my Master's project that studies the spectral properties (eigenvalues an
 which was applied on Gaussian processes induced by neural networks with infinitely many neurons in hidden layers.
 
 It is easy to implement the code if you have Jupyter Notebook installed. If not, please install jupyter notebook using following command:
+'''
 pip3 install notebook
+'''
 for both Mac and Linux systems.
