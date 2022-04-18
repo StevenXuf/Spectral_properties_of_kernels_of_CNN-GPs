@@ -1,2 +1,0 @@
-Please download the cnn_gp package from the repository: https://github.com/waegemans/cnn-gp/tree/stable-backprop, 
-such that you can compute the kernel matrix of Gaussian processes induced by neural networks.
