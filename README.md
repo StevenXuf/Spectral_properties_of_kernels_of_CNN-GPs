@@ -8,3 +8,5 @@ Our whole numerical experiments are programming by Python, and if you want to im
 pip3 install notebook
 ```
 to install the notebook for both Mac and Linux systems if you did not install it yet.
+
+After you installed the environment, please visit: [this page](https://github.com/waegemans/cnn-gp/tree/stable-backprop) to get the library that can compute the kernel matrix when we input some data, and follow the procedures that mentioned to install the library.
