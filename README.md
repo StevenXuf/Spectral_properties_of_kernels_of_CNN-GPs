@@ -15,7 +15,7 @@ pip3 install [library_name]
 ```
 for all libraries except for `cnn_gp`. Please visit [this page](https://github.com/waegemans/cnn-gp/tree/stable-backprop) to get the library `cnn_gp` which can compute the kernel matrix when we input some data, and follow the procedures that mentioned to install the library.
 
-Presumably you have all the necessary libraries, please put the python modules `networks.py` and `eig_plot.py` under current path since you will need it when running the code.
+Presumably you have all the necessary libraries installed, please put the python modules `networks.py` and `eig_plot.py` under current path since you will need it when running the code.
 
 ## 2. Eigen-analysis
 ### Import data
