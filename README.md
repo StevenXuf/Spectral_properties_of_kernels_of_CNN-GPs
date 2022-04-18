@@ -85,3 +85,6 @@ plot_eigvec_3d(digits,U3_cnn,n_samples)
 ![3d plot of top 3 eigenvectors](/eigvec01cnn_3l.png)
 
 to show the 3D graph for top 3 eigenvectors.
+
+## 3. Network accuracy
+This part is concerning the accuracy for different network depths. We define a function `model_acc` to compute the network accuracy for different depths.
