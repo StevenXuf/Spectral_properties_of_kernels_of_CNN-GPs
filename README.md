@@ -49,9 +49,9 @@ cov_res=res3(img_set) #kernel matric of ResCNN
 
 ## Eigendecompostion
 We do the eigendecomposition using `numpy` libray. Actually, there are 2 choices that could decompose the kernel matrix:
-`
+```
 * numpy.linalg.eig
 * numpy.linalg.svd
-`
+```
 
 We use `svd` since it is numercially more stable than `eig`. If using `eig`, there will be sigularity in eigenvalues.
