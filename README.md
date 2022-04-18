@@ -5,5 +5,6 @@ which was applied on Gaussian processes induced by neural networks with infinite
 
 It is easy to implement the code if you have Jupyter Notebook installed. If not, please install jupyter notebook using following command:
 ```
-pip3 install notebook```
+pip3 install notebook
+```
 for both Mac and Linux systems.
