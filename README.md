@@ -91,6 +91,6 @@ This part is concerning the accuracy for different network depths. We define a f
 ```python
 model=cnn3
 training_batch_ind=10 #index of training batch
-acc_cnn3=model(cnn3,training_batch_ind)
+acc_cnn3=model_acc(model,training_batch_ind) #return average accuracy trained on a batch and whole testing data
 ```
 to get averge accuracy on a specific training batch.
