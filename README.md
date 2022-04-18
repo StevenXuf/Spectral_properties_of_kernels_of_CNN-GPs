@@ -87,4 +87,10 @@ plot_eigvec_3d(digits,U3_cnn,n_samples)
 to show the 3D graph for top 3 eigenvectors.
 
 ## 3. Network accuracy
-This part is concerning the accuracy for different network depths. We define a function `model_acc` to compute the network accuracy for different depths.
+This part is concerning the accuracy for different network depths. We define a function `model_acc(model,training_batch_ind)` to compute the network accuracy for different depths. Call function `model_acc` in file `Classification_acc`
+```python
+model=cnn3
+training_batch_ind=10 #index of training batch
+acc_cnn3=model(cnn3,training_batch_ind)
+```
+to get averge accuracy on a specific training batch.
