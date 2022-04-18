@@ -7,7 +7,7 @@ Our whole numerical experiments are programming by Python, and if you want to im
 ```
 pip3 install notebook
 ```
-to install the notebook for both Mac and Linux systems if you did not install it yet.
+to install the notebook for both IOS and Linux systems if you did not install it yet.
 
 After you installed the environment, you also need to install related libraries including: `matplotlib`, `numpy`, `torch`, `torchvision` and `cnn_gp`. To install the libraries, please use:
 ```
