@@ -73,7 +73,8 @@ digits=[0,1] #define the digits we want to do analysis
 U3_cnn,S3_cnn,V3_cnn=eigdecomp(cnn3,digits,n_samples) 
 plot_pairs(digits,U3_cnn,n_samples) #plot the top 5 pairwise eigenvectors
 ```
-which shows us the 2D graph in following ![pairwise plots of top 5 eigenvectors](/digit01cnn_3l.png)
+![pairwise plots of top 5 eigenvectors](/digit01cnn_3l.png)
+which shows us the 2D graph above.
 
 Implement
 ```python
