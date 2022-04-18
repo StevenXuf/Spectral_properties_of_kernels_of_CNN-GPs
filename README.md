@@ -22,7 +22,7 @@ We are using MNIST dataset which consists of 60,000 training samples and 10,000 
 ```python
 import torchvision as tv
 
-training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #download data
+training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #download training data
 training_imgs=training_data.data #image data
 training_labels=training_data.targets #image labels
 ```
@@ -40,10 +40,15 @@ cnn3=cnn(3) #convolutional networks with 3 layers
 res3=res_cnn(3) #residual convolutional networks with 3 layers
 ```
 
-
 ## Compute kernel matrix
-To measure the similarity between two images, their covariance must be computed using:
+To measure the similarity between any two images, their covariance must be computed using:
 ```python
 cov_cnn=cnn3(img_set) #kernel matrix of CNN
 cov_res=res3(img_set) #kernel matric of ResCNN
 ```
+
+## Eigendecompostion
+We do the eigendecomposition using `numpy` libray. Actually, there are 2 choices that could decompose the kernel matrix:
+* numpy.linalg.eig
+* numpy.linalg.svd
+We use `svd` since it is numercially more stable than `eig`. If using `eig`, there will be sigularity in eigenvalues.
