@@ -26,17 +26,24 @@ training_data=tv.datasets.MNIST('./mnist_train',train=True,download=True) #downl
 training_imgs=training_data.data #image data
 training_labels=training_data.targets #image labels
 ```
-Note that the image data must be normalized in range [0,1].
+Note that the image data must be normalized in range [0,1]:
+```python
+img_set=training_imgs[:100].reshape(100,1,28,28)/255 # normalize each pixles of 100 images into (0,1) 
+```
 
-##Define neural networks as Gaussian processes
+## Define neural networks as Gaussian processes
 We need to define the network structures in order to compute kernel matrix of the network. Please follow:
 ```python
-from networks import
+from networks import cnn, res_cnn
+
+cnn3=cnn(3) #convolutional networks with 3 layers
+res3=res_cnn(3) #residual convolutional networks with 3 layers
 ```
 
 
 ## Compute kernel matrix
 To measure the similarity between two images, their covariance must be computed using:
 ```python
-
+cov_cnn=cnn3(img_set) #kernel matrix of CNN
+cov_res=res3(img_set) #kernel matric of ResCNN
 ```
